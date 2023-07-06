@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium aut expedita ipsam recusandae, iusto corrupti delectus quis minus fugit enim perferendis doloremque nobis sapiente! Aut vitae odio ipsam? Fuga!</p>
+
+    <ul>
+        <li><a href="paginas-extra/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extra/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extra/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium aut expedita ipsam recusandae, iusto corrupti delectus quis minus fugit enim perferendis doloremque nobis sapiente! Aut vitae odio ipsam? Fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta alias voluptatibus laudantium amet iusto sint commodi sed eaque vero molestias consequatur error cum qui, atque libero officia iste asperiores quibusdam?</p>
+
+    <iframe id="tela" name="frame"srcdoc="<h1>Escolha ema das opções acima</h1>">
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, atque incidunt maxime aspernatur placeat porro in reprehenderit! Quod temporibus adipisci minima distinctio aliquam doloribus reprehenderit sunt, et voluptatum iure eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ratione totam facere necessitatibus nihil atque, vel, doloribus quo deserunt ducimus non beatae. Accusantium ducimus assumenda provident, iste eos nobis nihil.</p>
+</body>
+</html>
