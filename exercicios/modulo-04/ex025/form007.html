@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="mg">Minas gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp" selected>São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+            
+        <p>
+            <label for="ifrof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+                <option>Engenheiro</option>
+            </datalist>
+        </p>
+
+        <p>
+            <!-- Para usar esse input, usar método Post, pois os arquivos podem passar de 3000 bytes -->
+            <label for="imsg">Mensagens:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui!"></textarea>
+
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
